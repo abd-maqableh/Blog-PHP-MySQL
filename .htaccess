@@ -1,0 +1,22 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php !-f
+
+
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for section.php
+RewriteRule ^custom$ projects.php [NC,L]
+
+# NC makes the rule non case sensitive
+# L makes this the last rule that this specific condition will match
+# $ in the regular expression makes the matching stop so that "customblah" will not work
+
+# Rewrite for user.php?u=xxxxx
+RewriteRule ^section/([0-9a-zA-Z])$ section.php?categorey_id=$1 [NC,L]
+
+# Rewrite for article.php?id=1&title=Title-Goes-Here
+RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?id=$1&title=$2 [NC,L]

@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: Verdana, sans-serif;
+     margin:0;
+  }
+  h5{
+    font-size: 1.25rem;
+    padding-top: 10px;
+  }
+  .container{
+      width: 80%;
+      margin: auto;
+  }
+        /* horizantal line */
+  .hor-line{
+    border-top: 1px solid gray;
+    margin: -2px;
+  }
+  
+      /* header style  */
+      .logo-header{
+          width: 40%;
+      }
+     .logo-header>h4{
+        display: inline;
+        
+     }
+ .container .logo {
+    float: left;
+    padding: 15px;
+    color: grey;
+    width: 40%;
+  }
+  .container .logo>p {
+    display: inline;
+    font-size: large;
+    font-weight: bold;
+      }
+
+  .container .nav {
+  
+    width: 60%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .header .nav li  {
+    display: inline-block;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .header .nav li  a {
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    padding: 20px 10px ;
+    margin-right: 10px;
+  }
+  .header .nav li  i {
+    display: inline-block;
+    padding: 25px 20px ;
+  
+  }
+  .header .nav .btn {
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 17px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 5px 5px;
+    border-color: #4CAF50;
+    color: green;
+  
+  }
+  .header .nav .btn:hover{
+    background-color: #4CAF50;
+    color: white;
+  }
+            /* end header style */
+  
+  
+      /* to solve float issue */
+  .clear{
+    clear: both;
+  }
+  
+  
+  /* below the nav bar  */
+  
+  .below-hr-line {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-content: space-around;
+  }
+  .below-hr-line li   {
+   display: inline-block;
+  }
+  .below-hr-line li a   {
+    color: gray;
+    text-decoration: none;
+    padding: 0px 17px;
+    display: block;
+    margin: 10px 0;
+   }
+   .below-hr-line li a::after{
+     content: "";
+     width: 0;
+     height: 3px;
+     background-color: indigo;
+     display: block;
+     transition: width 0.40s;
+     
+   }
+   .below-hr-line li a:hover::after{
+    width: 100%;
+  }
+  .below-nav{
+      text-transform: uppercase;
+
+  }
+  /* end style nav */
+
+.section1-img{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.under-section1>a{
+    text-transform: capitalize;
+    text-decoration: none;
+
+
+}
+
+.under-section1 .head-line1{
+    margin-top: 30px;
+}
+
+.section3{
+  background-color: #f6f5f4 ;
+  
+}
+.section2 .img1-container{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container2{
+  width: 74%;
+  margin: auto;
+  margin-top: 10px;
+}
+.container2>h1{
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 22px;
+}
+.container2 .number-of-comments{
+  display: inline-block;
+}
+.paragraph{
+  border: black solid 0.5px;
+  margin-bottom: 30px;
+
+}
+.paragraph>p{
+  margin: 10px 10px 10px 10px;
+}
+.more-paragraph{
+  margin-bottom: 40px;
+  border: black solid 0.5px;
+
+}
+.more-paragraph>p{
+  margin: 10px 10px 10px 10px;
+
+}
+
+.join-form .text-area{
+  width: 100%;
+  height: 200px;
+
+}
+
+.join-form .username-email{
+  display: inline-block;
+  width: 50%;
+}
+.form-control1 {
+  display: block;
+  width: 100%;
+  height: calc(3.5em + 6.75rem + 11px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.button .btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  align-content: center;
+  padding-left: 118px;
+  padding-right: 118px;
+  margin-left: 400px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.img4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 9px;
+  grid-column-gap: 30px;
+}
+
+.img4 .similar-artical{
+  width: 100%;
+  height: 200px;
+
+}
+
+
+
+
+
+/* footer  */
+
+.blog-footer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  z-index: 1;
+  background-color: transparent !important;
+
+
+}   
+
+.blog-footer .footer-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #474749;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+  height: 166px;
+} 
+.blog-footer .footer-wrapper::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-image: url(../blog-images/pattern.png);
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transform: skewY(5deg);
+  transform: skewY(-5deg);
+  height: 166px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} 
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .blog-footer .footer-wrapper::before {
+    background-attachment: scroll;
+  }
+}
+.footer-content{
+  padding-top: 42px;
+
+}
+.footer-content >input {
+  height: 31px;
+  width: 292px;
+  background-color: #474749;
+  color: cornsilk;
+}
+.footer-content>button {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 0;
+  width: 126px;
+  height: 36px;
+  /* padding-bottom: 10px; */
+}
+.footer-social{
+  width: 80%;
+  margin: auto;
+}
+.sprintive-logo {
+  width: 8%;
+  padding-top: 66px;
+  margin-left: 556px;
+  display: block;
+}
+.info-footer{
+  font-size: 15px ;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 20px;
+  color: #474749;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.icon-social {
+  margin-bottom: 15px;
+}
+.icon-social>i{
+  padding-left: 30px;
+
+}
+/*end style fot footer */
