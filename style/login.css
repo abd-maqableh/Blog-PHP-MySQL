@@ -1,14 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    width: 100%;
-    margin: 10px 10px 10px 10px;
-    font-family: 'Raleway', sans-serif;
-}
 
 h5 {
     text-transform: uppercase;

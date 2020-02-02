@@ -113,7 +113,6 @@ require_once 'conn.php';
       <h5>E-Commerce</h5>
       <p>6001 Views</p>
 
-      <!-- --------------------------------------- -->
       <div class="img-opcity">
         <img src="./blog-images/5b39e6babeef6.jpg" alt="deer">
         <h5>Design Agencies</h5>

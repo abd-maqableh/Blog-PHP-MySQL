@@ -25,8 +25,8 @@ try {
 }
 ?>
 
-<div class="container under-header ">
-    <div class=" under-header-c1">
+<div class="container2 row2 ">
+    <div class=" col-md-8">
         <div class="under-header-c1-s1">
 
             <?php
@@ -46,7 +46,7 @@ try {
                         $img = "uploads/".$artical_image;
                         $artical_title = $artical['title'];
                         $artical_id = $artical['id'];
-                        echo  "<a href=\"article.php?artical_id= $artical_id\" id=\"myBtn\"> <img src=\"$img \" style=\" width: 100%;height: 280px;\" > </a> ";
+                        echo  "<a href=\"article.php?artical_id= $artical_id\" id=\"myBtn\"> <img src=\"$img \" style=\" width: 100%;\" > </a> ";
                         echo "<p><b>$artical_title</b></p>";
                     }
                 }
@@ -59,7 +59,7 @@ try {
 
 
 
-    <div class="under-header-c2">
+    <div class="col-md-4">
         <div class="under-header-c2-s1 ">
             <h3>sections</h3>
             <?php
@@ -78,6 +78,7 @@ try {
           $number_of_artical = $stm->fetch();
 
           echo "<li><a class=\"below-nav\" href=\"section/$category_id\">$category_name</a> <samll>($number_of_artical[0]) </small></li>";
+         
         }
       }
 
@@ -90,7 +91,6 @@ try {
             <h5>E-Commerce</h5>
             <p>6001 Views</p>
 
-            <!-- --------------------------------------- -->
             <div class="img-opcity">
                 <img src="./blog-images/5b39e6babeef6.jpg" alt="deer">
                 <h5>Design Agencies</h5>

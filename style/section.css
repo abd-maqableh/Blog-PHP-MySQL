@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: Verdana, sans-serif;
-     margin:0;
-  }
+
   h5{
     font-size: 1.25rem;
     padding-top: 10px;
@@ -107,20 +98,25 @@
    .below-hr-line li a:hover::after{
     width: 100%;
   }
-  
+  .row2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   
+}
+.container2 {
+  width: 100%;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-/* start style the contant */
-.under-header{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 70% 30%;
 
-  }
 /* style under headr c1 */
 
 .under-header-c1-s1>img{
     width: 100%;
-    height: 200px;
 }
 .under-header-c1-s1>p{
    font-size: 20px;
@@ -142,6 +138,10 @@
     margin-right: auto;
     padding-top: 10px;
     margin-left: 30px;
+  }
+  .under-header-c2-s1>li{
+    list-style-type: none;
+
   }
   .under-header-c2-s2{
     background-color: rgba(231, 230, 230, 0.699);
@@ -213,100 +213,3 @@
    font-size: 25px;
   }
 
-  /* style fot footer */
-.blog-footer {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-align: center;
-    z-index: 1;
-    background-color: transparent !important;
-  
-  
-  }   
-  
-  .blog-footer .footer-wrapper::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    background-color: #474749;
-    bottom: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-transform: skewY(5deg);
-    transform: skewY(5deg);
-    height: 166px;
-  } 
-  .blog-footer .footer-wrapper::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    background-image: url(../blog-images/pattern.png);
-    bottom: 0;
-    top: 0;
-    z-index: -1;
-    -webkit-transform: skewY(5deg);
-    transform: skewY(-5deg);
-    height: 166px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  } 
-  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .blog-footer .footer-wrapper::before {
-      background-attachment: scroll;
-    }
-  }
-  .footer-content{
-    padding-top: 42px;
-  
-  }
-  .footer-content >input {
-    height: 31px;
-    width: 292px;
-    background-color: #474749;
-    color: cornsilk;
-  }
-  .footer-content>button {
-    color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
-    border-radius: 0;
-    width: 126px;
-    height: 36px;
-    /* padding-bottom: 10px; */
-  }
-  .footer-social{
-    width: 80%;
-    margin: auto;
-  }
-  .sprintive-logo {
-    width: 8%;
-    padding-top: 66px;
-    margin-left: 556px;
-    display: block;
-  }
-  .info-footer{
-    font-size: 15px ;
-    text-transform: capitalize;
-    text-decoration: none;
-    cursor: pointer;
-    padding-left: 20px;
-    color: #474749;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  .icon-social {
-    margin-bottom: 15px;
-}
-  .icon-social>i{
-    padding-left: 30px;
-  
-  }
-  /*end style fot footer */
